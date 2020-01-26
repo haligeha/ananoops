@@ -70,6 +70,8 @@ class UserInfo extends React.Component {
 }
 
 const HeaderBar = (props) => {
+  
+  console.log(props.menuName)
   return (
     <Header>
       <Breadcrumb>

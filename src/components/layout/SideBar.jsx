@@ -29,6 +29,7 @@ class SiderBar extends React.Component {
       this.menuConfig = menuConfig
       this.handleDefaultSelect();
       const menuList = this.setMenu(menuConfig);
+      console.log(menuList)
       this.setState({
         menuList
       });
