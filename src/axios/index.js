@@ -26,6 +26,8 @@ export const reqAddOrUpdateAuth = (newAuth) => ajax('/uac/action/save',newAuth)
 
 //loginAfter获取用户整体信息
 export const reqLoginAfter = () => ajax('/uac/user/loginAfter/1')
+//修改密码
+export const reqChangePwd = (dataPost) => ajax('/uac/user/authUserModifyPwd',dataPost)
 
 
 //获取用户列表

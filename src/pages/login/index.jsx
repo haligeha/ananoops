@@ -165,6 +165,7 @@ class Login extends React.Component {
       }
     }).catch((err) => {
       console.log(err);
+      message.error('登陆失败')
       // message.info('验证码错误')
     });
   }
