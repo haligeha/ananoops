@@ -312,7 +312,6 @@ class Test extends Component{
       )
     }
   }
-
   //操作改变进行状态之间的切换
   changeStatus(id,status,statusMsg){
     const values={"status": status,"statusMsg": statusMsg,"taskId":id}
@@ -746,18 +745,11 @@ class Test extends Component{
                 return (record.createdTime && record.createdTime)|| '--'
               }
             },
-            // {
-            //   title: '项目ID', 
-            //   key: 'projectId',
-            //   render: (text, record) => {
-            //     return (record.projectId && record.projectId) || '--'
-            //   }
-            // },
             {
-              title: '报修人编号',
-              key: 'userId',
+              title: '截止时间',
+              key: 'deadline',
               render: (text, record) => {
-                return (record.userId && record.userId) || '--'
+                return (record.deadline && record.deadline) || '--'
               }
             },{
               title: '状态',
@@ -796,7 +788,6 @@ class Test extends Component{
                     to={`/cbd/service/detail/${record.id}`}
                     style={{marginRight:'12px'}}
                   >详情</Link>
-                  {this.getFunction(record,status,roleCode)}            
                 </div>
               ),
             }]}
